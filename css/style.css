@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --morado: #766CF1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--Pale-blue);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 500px;
+    width: 320px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    box-shadow: 4px -1px 17px 9px rgba(0,0,0,0.34);
+    -webkit-box-shadow: 4px -1px 17px 9px rgba(0,0,0,0.34);
+    -moz-box-shadow: 4px -1px 17px 9px rgba(0,0,0,0.34);
+}
+
+.box-1-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 343px;
+    width: 100%;;
+}
+
+.img-1 {
+    height: auto;
+    width: auto;
+    border-radius:  10px 10px 0 0; 
+}
+
+.box-1 {
+    height: 35%;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+p {
+    color: var(--Desaturated-blue);
+}
+
+.box-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 25px 0; 
+    height: 60px;
+    width: 70%;
+    background-color: var(--Pale-blue);
+    border-radius: 5px;
+}
+
+.img-icon {
+    height: 40px;
+    width: 40px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
+
+.text p {
+    margin: 5px 0;
+}
+a {
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--Bright-blue);
+}
+
+input {
+    cursor: pointer;
+    width:  70%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Bright-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: var(--Very-pale-blue);
+    box-shadow: 4px 1px 14px 3px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 4px 1px 14px 3px rgba(0,0,0,0.33);
+    -moz-box-shadow: 4px 1px 14px 3px rgba(0,0,0,0.33);
+    margin-bottom: 25px;
+}
+
+input:hover {
+    
+    background-color: var(--morado);
+}
+
+.link {
+    cursor: pointer;
+}
+
+.img-body {
+    z-index: -1;
+    width: 100%;
+    position: fixed;
+}
